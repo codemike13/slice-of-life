@@ -1,6 +1,5 @@
 // # Slice of Life
 
-
 // ### Guidelines
 
 // 1. For all challenges, you may either:
@@ -10,23 +9,23 @@
 
 // 2. Use `const` for all variables.
 
+console.log("# Replacement Challenges");
 
-
-console.log('# Replacement Challenges');
-
-console.log('### Challenge #1');
+console.log("### Challenge #1");
 
 // For the string `Hello, there.`, console out the same string but with the
 // first `e` replaced with an `o`.
 
+const hWorld = `Hello, there.`;
 
+console.log(hWorld.replace(`o`, `e`));
 
-console.log('### Challenge #2');
+console.log("### Challenge #2");
 
 // For the string `Hello, there.`, console out the same string but with the
 // `there` replaced with `you`.
-
-
+const hiYou = hWorld.replace(`there`, `you`);
+console.log(hiYou);
 
 console.log(`### Challenge #3`);
 
@@ -34,13 +33,13 @@ console.log(`### Challenge #3`);
 // first `e` replaced with an `i` and the `o` replaced with `y`. Hint: one way
 // to do this involves repeating the same operation twice, though with
 // different arguments.
-
+console.log(hiYou.replace(`e`, `i`).replace(`o`, `y`));
 
 console.log(`### Challenge #4`);
 
 // For the string `Hello, there.`, console out the same string but with _every_
 // `e` replaced by an `o`. If you got this far, you are thoro af.
-
+console.log(hWorld.replace(/e/g, `o`));
 
 
 console.log(`# Slice Challenges`);
@@ -49,20 +48,20 @@ console.log(`### Challenge #5`);
 
 // For the string `Watch that speedbump!`, console out the first 5 characters.
 
+const watch = `Watch that speedbump!`;
 
+console.log(watch.slice(0,5));
 
 console.log(`### Challenge #6`);
 
 // For the string `Watch that speedbump!`, console out the first 6 characters.
-
-
+console.log(watch.slice(0, 6));
 
 console.log(`### Challenge #7`);
 
 // For the string `Watch that speedbump!`, console out everything _except for_ the last 4
 // characters.
-
-
+console.log(watch.slice(0,-4));
 
 console.log(`### Challenge #8`);
 
@@ -71,3 +70,5 @@ console.log(`### Challenge #8`);
 // but they should both be created using `slice` with the _exact_ same
 // argument(s).
 
+console.log(watch.slice(-4));
+console.log(hWorld.slice(-4))
